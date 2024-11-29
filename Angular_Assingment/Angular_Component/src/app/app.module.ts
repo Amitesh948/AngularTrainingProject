@@ -13,6 +13,8 @@ import { CtaComponent } from './cta/cta.component';
 import { ColElDirective } from './col-el.directive';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsModule } from '@angular/forms';
+import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
+import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     PostsComponent,
     CtaComponent,
     ColElDirective,
-    DirectivesComponent
+    DirectivesComponent,
+    LeftSidebarComponent,
+    RightSidebarComponent
   ],
   imports: [
     BrowserModule,

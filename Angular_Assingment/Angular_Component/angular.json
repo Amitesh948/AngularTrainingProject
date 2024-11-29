@@ -27,9 +27,12 @@
             "styles": [
               "src/assets/css/main.css",
               "src/assets/css/fontawesome-all.min.css"
-
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.dropotron.min.js",
+              "src/assets/js/breakpoints.min.js",
+              "src/assets/js/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {

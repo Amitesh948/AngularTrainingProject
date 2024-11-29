@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent  {
+export class AppComponent {
   title = 'Angular_Component';
-  no_Sidebar : string = "No Sidebar" 
+  no_Sidebar: string = "No Sidebar"
+  currentPage: any = "home";
+
+  pageHasBeenChanged(page: string) {
+    this.currentPage = page;
+  }
 }

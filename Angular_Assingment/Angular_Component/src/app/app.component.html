@@ -1,13 +1,25 @@
 <!-- <input type="text" [(ngModel)]="name"> -->
-<app-directives></app-directives>
-<app-main></app-main>
-<app-header [item]="no_Sidebar"></app-header>
-<app-banner></app-banner>
-<app-highlight></app-highlight>
-<app-gigantic-heading></app-gigantic-heading>
-<app-posts></app-posts>
-<app-cta></app-cta>
-<app-footer></app-footer>
+<!-- <app-directives></app-directives> -->
+<!-- <app-main></app-main> -->
+<app-header [item]="no_Sidebar" [currentPage]="currentPage" (pageChanged)="pageHasBeenChanged($event)"></app-header>
+<div *ngIf="currentPage == 'home'">
+    <app-banner></app-banner>
+    <app-highlight></app-highlight>
+    <app-gigantic-heading></app-gigantic-heading>
+    <app-posts></app-posts>
+    <app-cta></app-cta>
+</div>
+
+<ng-container *ngIf="currentPage == 'left_Sidebar'">
+    <app-left-sidebar></app-left-sidebar>
+</ng-container>
+
+<ng-container *ngIf="currentPage == 'right_Sidebar'">
+    <app-right-sidebar></app-right-sidebar>
+</ng-container>
+
+
+<app-footer [data]="currentPage"></app-footer>
 
 
 

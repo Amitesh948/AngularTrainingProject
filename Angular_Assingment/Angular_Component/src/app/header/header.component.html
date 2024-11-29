@@ -11,15 +11,15 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li class="current"><a appColEl href="index.html">{{home}}</a></li>
+                    <li (click)="changePage('home')" [ngStyle]="{'font-size': currentPage == 'home' ? '20px' : '15px' }"  [ngClass]="{'current': currentPage == 'home'}"><a  href="javascript::">{{home}}</a></li>
                     <li>
-                        <a appColEl href="#">{{dropdown}}</a>
+                        <a  href="#">{{dropdown}}</a>
                         <ul>
                             <li><a href="#">Lorem dolor</a></li>
                             <li><a href="#">Magna phasellus</a></li>
                             <li><a href="#">Etiam sed tempus</a></li>
                             <li>
-                                <a appColEl href="#">Submenu</a>
+                                <a  href="#">Submenu</a>
                                 <ul>
                                     <li><a href="#">Lorem dolor</a></li>
                                     <li><a href="#">Phasellus magna</a></li>
@@ -31,10 +31,10 @@
                             <li><a href="#">Veroeros feugiat</a></li>
                         </ul>
                     </li>
-                    <li><a appColEl href="left-sidebar.html">{{left_Sidebar}}</a></li>
-                    <li><a appColEl href="right-sidebar.html">{{right_Sidebar}}</a></li>
-                    <li><a appColEl href="two-sidebar.html">{{two_Sidebar }}</a></li>
-                    <li><a appColEl href="no-sidebar.html">{{item}}</a></li>
+                    <li (click)="changePage('left_Sidebar')" [ngClass]="{'current': currentPage == 'left_Sidebar'}"><a href="javascript::">{{left_Sidebar}}</a></li>
+                    <li (click)="changePage('right_Sidebar')" [ngClass]="{'current': currentPage == 'right_Sidebar'}"><a href="javascript::">{{right_Sidebar}}</a></li>
+                    <li (click)="changePage('two_Sidebar')" [ngClass]="{'current': currentPage == 'two_Sidebar '}"><a href="javascript::">{{two_Sidebar }}</a></li>
+                    <li (click)="changePage('item')" [ngClass]="{'current': currentPage == 'item'}"><a href="javascript::">{{item}}</a></li>
                 </ul>
             </nav>
 
