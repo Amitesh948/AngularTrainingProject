@@ -6,7 +6,7 @@ import { Component , Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-header : string = "Arcana"
+show= true;
 subHeader : string = "by HTML5 UP"
 home : string = "Home"
 dropdown : string ="Dropdown"

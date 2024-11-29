@@ -5,20 +5,21 @@
         <div id="header">
 
             <!-- Logo -->
-            <h1><a href="index.html" id="logo">{{header}}<em>{{subHeader}}</em></a></h1>
-
+            <h1><a><em *ngIf="show ; then ifBlock else elseBlock">{{subHeader}}</em></a></h1>
+             <ng-template #ifBlock>Arcana</ng-template>
+             <ng-template #elseBlock>Undifine</ng-template>
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="index.html">{{home}}</a></li>
+                    <li class="current"><a appColEl href="index.html">{{home}}</a></li>
                     <li>
-                        <a href="#">{{dropdown}}</a>
+                        <a appColEl href="#">{{dropdown}}</a>
                         <ul>
                             <li><a href="#">Lorem dolor</a></li>
                             <li><a href="#">Magna phasellus</a></li>
                             <li><a href="#">Etiam sed tempus</a></li>
                             <li>
-                                <a href="#">Submenu</a>
+                                <a appColEl href="#">Submenu</a>
                                 <ul>
                                     <li><a href="#">Lorem dolor</a></li>
                                     <li><a href="#">Phasellus magna</a></li>
@@ -30,10 +31,10 @@
                             <li><a href="#">Veroeros feugiat</a></li>
                         </ul>
                     </li>
-                    <li><a href="left-sidebar.html">{{left_Sidebar}}</a></li>
-                    <li><a href="right-sidebar.html">{{right_Sidebar}}</a></li>
-                    <li><a href="two-sidebar.html">{{two_Sidebar }}</a></li>
-                    <li><a href="no-sidebar.html">{{item}}</a></li>
+                    <li><a appColEl href="left-sidebar.html">{{left_Sidebar}}</a></li>
+                    <li><a appColEl href="right-sidebar.html">{{right_Sidebar}}</a></li>
+                    <li><a appColEl href="two-sidebar.html">{{two_Sidebar }}</a></li>
+                    <li><a appColEl href="no-sidebar.html">{{item}}</a></li>
                 </ul>
             </nav>
 
