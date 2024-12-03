@@ -1,43 +1,43 @@
 <body class="is-preload">
-    <div id="page-wrapper">
+  <div id="page-wrapper">
 
-        <!-- Header -->
-        <div id="header">
+      <!-- Header -->
+      <div id="header">
 
-            <!-- Logo -->
-            <h1><a><em *ngIf="show ; then ifBlock else elseBlock">{{subHeader}}</em></a></h1>
-             <ng-template #ifBlock>Arcana</ng-template>
-             <ng-template #elseBlock>Undifine</ng-template>
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li (click)="changePage('home')" [ngStyle]="{'font-size': currentPage == 'home' ? '20px' : '15px' }"  [ngClass]="{'current': currentPage == 'home'}"><a  href="javascript::">{{home}}</a></li>
-                    <li>
-                        <a  href="#">{{dropdown}}</a>
-                        <ul>
-                            <li><a href="#">Lorem dolor</a></li>
-                            <li><a href="#">Magna phasellus</a></li>
-                            <li><a href="#">Etiam sed tempus</a></li>
-                            <li>
-                                <a  href="#">Submenu</a>
-                                <ul>
-                                    <li><a href="#">Lorem dolor</a></li>
-                                    <li><a href="#">Phasellus magna</a></li>
-                                    <li><a href="#">Magna phasellus</a></li>
-                                    <li><a href="#">Etiam nisl</a></li>
-                                    <li><a href="#">Veroeros feugiat</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                    </li>
-                    <li (click)="changePage('left_Sidebar')" [ngClass]="{'current': currentPage == 'left_Sidebar'}"><a href="javascript::">{{left_Sidebar}}</a></li>
-                    <li (click)="changePage('right_Sidebar')" [ngClass]="{'current': currentPage == 'right_Sidebar'}"><a href="javascript::">{{right_Sidebar}}</a></li>
-                    <li (click)="changePage('two_Sidebar')" [ngClass]="{'current': currentPage == 'two_Sidebar '}"><a href="javascript::">{{two_Sidebar }}</a></li>
-                    <li (click)="changePage('item')" [ngClass]="{'current': currentPage == 'item'}"><a href="javascript::">{{item}}</a></li>
-                </ul>
-            </nav>
+          <!-- Logo -->
+          <h1><a><em *ngIf="show ; then ifBlock else elseBlock">{{subHeader}}</em></a></h1>
+           <ng-template #ifBlock>Arcana</ng-template>
+           <ng-template #elseBlock>Undifine</ng-template>
+          <!-- Nav -->
+          <nav id="nav">
+              <ul>
+                  <li (click)="changePage('home')" [ngStyle]="{'font-size': currentPage == 'home' ? '20px' : '15px' }"  [ngClass]="{'current': currentPage == 'home'}"><a  href="javascript::">{{home}}</a></li>
+                  <li>
+                      <a  href="#">{{dropdown}}</a>
+                      <ul>
+                          <li><a href="#">Lorem dolor</a></li>
+                          <li><a href="#">Magna phasellus</a></li>
+                          <li><a href="#">Etiam sed tempus</a></li>
+                          <li>
+                              <a  href="#">Submenu</a>
+                              <ul>
+                                  <li><a href="#">Lorem dolor</a></li>
+                                  <li><a href="#">Phasellus magna</a></li>
+                                  <li><a href="#">Magna phasellus</a></li>
+                                  <li><a href="#">Etiam nisl</a></li>
+                                  <li><a href="#">Veroeros feugiat</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#">Veroeros feugiat</a></li>
+                      </ul>
+                  </li>
+                  <li (click)="changePage('left_Sidebar')" [ngClass]="{'current': currentPage == 'left_Sidebar'}"><a href="javascript::">{{left_Sidebar}}</a></li>
+                  <li (click)="changePage('right_Sidebar')" [ngClass]="{'current': currentPage == 'right_Sidebar'}"><a href="javascript::">{{right_Sidebar}}</a></li>
+                  <li (click)="changePage('two_Sidebar')" [ngClass]="{'current': currentPage == 'two_Sidebar '}"><a href="javascript::">{{two_Sidebar }}</a></li>
+                  <li (click)="changePage('no_Sidebar')" [ngClass]="{'current': currentPage == 'no_Sidebar '}"><a href="javascript::">{{no_Sidebar }}</a></li>
+              </ul>
+          </nav>
 
-        </div>
-    </div>
+      </div>
+  </div>
 </body>

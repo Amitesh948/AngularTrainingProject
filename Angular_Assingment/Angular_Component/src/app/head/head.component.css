@@ -1,0 +1,8 @@
+.custom-navbar {
+    background: linear-gradient(to bottom, #000000 0%, #000000 85%, #007bff 85%, #007bff 100%);
+    height: 100px; 
+  }
+  .custom-navbar .nav-link {
+    color: white !important; 
+    margin-top: 25px;
+  }

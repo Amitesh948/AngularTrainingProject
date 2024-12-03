@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Angular_Component';
-  no_Sidebar: string = "No Sidebar"
+ 
   currentPage: any = "home";
 
   pageHasBeenChanged(page: string) {

@@ -15,6 +15,13 @@ import { DirectivesComponent } from './directives/directives.component';
 import { FormsModule } from '@angular/forms';
 import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
+import { NoSidebarComponent } from './no-sidebar/no-sidebar.component';
+import { TwoSidebarComponent } from './two-sidebar/two-sidebar.component';
+import { LoginComponent } from './login/login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeadComponent } from './head/head.component';
+import { BanComponent } from './ban/ban.component';
+import { HighComponent } from './high/high.component';
 
 
 @NgModule({
@@ -31,12 +38,19 @@ import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
     ColElDirective,
     DirectivesComponent,
     LeftSidebarComponent,
-    RightSidebarComponent
+    RightSidebarComponent,
+    NoSidebarComponent,
+    TwoSidebarComponent,
+    LoginComponent,
+    HeadComponent,
+    BanComponent,
+    HighComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

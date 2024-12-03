@@ -14,6 +14,7 @@ export class HeaderComponent {
   left_Sidebar: string = "Left Sidebar"
   right_Sidebar: string = "Right Sidebar"
   two_Sidebar: string = "Two Sidebar"
+  no_Sidebar: string = "No Sidebar"
 
   @Input() item = "Hello";
   @Input() currentPage: string = '';

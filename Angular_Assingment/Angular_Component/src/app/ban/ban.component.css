@@ -1,0 +1,7 @@
+.imgs{
+    background-image: url('../../assets/images/banner.jpg');
+    height: 500px;
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white; 
+}
