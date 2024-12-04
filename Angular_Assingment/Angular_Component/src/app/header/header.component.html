@@ -11,7 +11,7 @@
           <!-- Nav -->
           <nav id="nav">
               <ul>
-                  <li (click)="changePage('home')" [ngStyle]="{'font-size': currentPage == 'home' ? '20px' : '15px' }"  [ngClass]="{'current': currentPage == 'home'}"><a  href="javascript::">{{home}}</a></li>
+                  <li (click)="changePage('home')" ><a  href="javascript::">{{home}}</a></li>
                   <li>
                       <a  href="#">{{dropdown}}</a>
                       <ul>
@@ -31,10 +31,10 @@
                           <li><a href="#">Veroeros feugiat</a></li>
                       </ul>
                   </li>
-                  <li (click)="changePage('left_Sidebar')" [ngClass]="{'current': currentPage == 'left_Sidebar'}"><a href="javascript::">{{left_Sidebar}}</a></li>
-                  <li (click)="changePage('right_Sidebar')" [ngClass]="{'current': currentPage == 'right_Sidebar'}"><a href="javascript::">{{right_Sidebar}}</a></li>
-                  <li (click)="changePage('two_Sidebar')" [ngClass]="{'current': currentPage == 'two_Sidebar '}"><a href="javascript::">{{two_Sidebar }}</a></li>
-                  <li (click)="changePage('no_Sidebar')" [ngClass]="{'current': currentPage == 'no_Sidebar '}"><a href="javascript::">{{no_Sidebar }}</a></li>
+                  <li (click)="changePage('left_Sidebar')" ><a href="javascript::">{{left_Sidebar}}</a></li>
+                  <li (click)="changePage('right_Sidebar')" ><a href="javascript::">{{right_Sidebar}}</a></li>
+                  <li (click)="changePage('two_Sidebar')"><a href="javascript::">{{two_Sidebar }}</a></li>
+                  <li (click)="changePage('no_Sidebar')" ><a href="javascript::">{{no_Sidebar }}</a></li>
               </ul>
           </nav>
 

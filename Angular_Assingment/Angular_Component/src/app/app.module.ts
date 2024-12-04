@@ -22,6 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeadComponent } from './head/head.component';
 import { BanComponent } from './ban/ban.component';
 import { HighComponent } from './high/high.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { HighComponent } from './high/high.component';
     LoginComponent,
     HeadComponent,
     BanComponent,
-    HighComponent
+    HighComponent,
+    TwoWayBindingComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

@@ -16,20 +16,21 @@ export class HeaderComponent {
   two_Sidebar: string = "Two Sidebar"
   no_Sidebar: string = "No Sidebar"
 
-  @Input() item = "Hello";
-  @Input() currentPage: string = '';
+  
+  @Input() currentPages: string = '';
+  @Input() currentViews: string = '';
   @Output() pageChanged = new EventEmitter<string>();
 
   constructor(){  }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.currentPage);
+    console.log(this.currentPages);
   }
 
   ngOnInit(): void {  }
 
   changePage(page: string) {
-    this.currentPage = page;
+    this.currentPages = page;
     this.pageChanged.emit(page);
   }
 }

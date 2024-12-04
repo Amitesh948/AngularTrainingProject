@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -6,16 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  user = {
-    username: '',
-    password: ''
-  };
-
-  onSubmit(form: any) {
-    if (form.valid) {
-      console.log('Form Submitted!', this.user);
-    } else {
-      console.log('Form is invalid');
-    }
+  @Input() signUp: string = '';
+ // @Output() logIN = new EventEmitter<>();
   }
-}
+

@@ -4,7 +4,11 @@
 <!-- <input type="text" [(ngModel)]="name"> -->
 <!-- <app-directives></app-directives> -->
 <!-- <app-main></app-main> -->
-<app-header [currentPage]="currentPage" (pageChanged)="pageHasBeenChanged($event)"></app-header>
+<div *ngIf="currentview == 'signup'">
+<app-sign-up [currentViews]="currentview" (viewChanged)="viewHasBeenChanged($event)"></app-sign-up>
+</div>
+<div *ngIf="currentview == 'loginPage'">
+<app-header [currentPages]="currentPage" (pageChanged)="pageHasBeenChanged($event)"></app-header>
 <div *ngIf="currentPage == 'home'">
     <app-banner></app-banner>
     <app-highlight></app-highlight>
@@ -29,6 +33,8 @@
     <app-no-sidebar></app-no-sidebar>
 </ng-container>
 
+
 <app-footer [data]="currentPage"></app-footer>
+</div>
 
 
