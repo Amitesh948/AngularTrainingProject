@@ -18,7 +18,6 @@ export class HeaderComponent {
 
   
   @Input() currentPages: string = '';
-  @Input() currentViews: string = '';
   @Output() pageChanged = new EventEmitter<string>();
 
   constructor(){  }

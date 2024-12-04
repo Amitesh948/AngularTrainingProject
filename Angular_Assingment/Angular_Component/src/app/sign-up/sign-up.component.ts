@@ -1,4 +1,4 @@
-import { Component ,Input , Output , EventEmitter } from '@angular/core';
+import { Component , Output , EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sign-up',
@@ -11,10 +11,14 @@ export class SignUpComponent {
     userEmail: '',
     userPassword: ''
   }
-  @Input() currentViews: string = '';
-  @Output() viewChanged = new EventEmitter<string>();
+ 
+  @Output() viewChanged = new EventEmitter<{view :string ,  user: any}>();
   
   onSubmit(view : string ) {
-   this.viewChanged.emit(view);
+    const payload = {
+      view: view,
+      user: this.user
+    };
+   this.viewChanged.emit(payload);
   }
 }
