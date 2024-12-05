@@ -5,13 +5,14 @@
 <!-- <app-directives></app-directives> -->
 <!-- <app-main></app-main> -->
 <div *ngIf="currentview == 'signup'">
-       <app-sign-up (viewChanged)="viewHasBeenChanged($event)">{{userEmail}}</app-sign-up>
+       <app-sign-up (viewChanged)="viewHasBeenChanged($event)"></app-sign-up>
 </div>
 <div *ngIf="currentview == 'loginPage'">
-    <app-login [signUpEmail]="userEmail" [signUpPassword]="userPassword" (logIN)="webHasBeenAccessed($event)"></app-login>
+    <app-login [signUpEmail]= "userEmail" [signUpPassword]="userPassword" (logIN)="webHasBeenAccessed($event)"></app-login>
 </div>
 <div *ngIf="currentview == 'accessWeb'">
-<app-header [currentPages]="currentPage" (pageChanged)="pageHasBeenChanged($event)"></app-header>
+<app-main [text]="userName"></app-main>
+<app-header (pageChanged)="pageHasBeenChanged($event)"></app-header>
 <div *ngIf="currentPage == 'home'">
     <app-banner></app-banner>
     <app-highlight></app-highlight>

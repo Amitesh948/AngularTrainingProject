@@ -10,22 +10,27 @@ export class AppComponent {
   title = 'Angular_Component';
   currentPage: any = "home";
   currentview: any ='signup';
-  userEmail: string='123455535335';
-  userPassword: string='';
+  userName: string ='';
+  userEmail: string ='';
+  userPassword: string ='';
 
   pageHasBeenChanged(page: string) {
     this.currentPage = page;
   }
   viewHasBeenChanged(event: { view: string; user: any }) {
    this.currentview=event.view;  
+   this.userName=event.user.userName;
    this.userEmail=event.user.userEmail;
    this.userPassword=event.user.userPassword;
-   console.log('User Email:', this.userEmail);
-   console.log('User Password:', this.userPassword);
+   console.log('User Emailsss:', this.userEmail);
+   console.log('User Passwordss:', this.userPassword);
+   console.log('User Name is :', this.userName);
   }
   
   webHasBeenAccessed(event: { userEmail: string; userPass: string; viewData: string }) {
     this.currentview= event.viewData;
+    this.userEmail=event.userEmail;
+    this.userPassword=event.userPass;
     console.log('User Email:', this.userEmail);
     console.log('User Password:', this.userPassword);
     }

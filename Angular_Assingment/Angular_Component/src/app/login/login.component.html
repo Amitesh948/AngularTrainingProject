@@ -5,9 +5,9 @@
     </div>
     <form>
       <label>Email</label>
-      <input type="email" id="lemail" name="email" [(ngModel)]="logEmail">
+      <input type="email" id="lemail" name="email" [(ngModel)]="logEmail" (ngModelChange)="logName()">
       <label>Password</label>
-      <input type="password" id="lpassword" name="password" [(ngModel)]="logPass">
-      <button type="button" (click)="onAccess('accessWeb')" >Log IN</button>
+      <input type="password" id="lpassword" name="password" [(ngModel)]="logPass" (ngModelChange)="logName()">
+      <button type="button" id="lbutton" (click)="onAccess('accessWeb')" >Log IN</button>
     </form>
   </div>
