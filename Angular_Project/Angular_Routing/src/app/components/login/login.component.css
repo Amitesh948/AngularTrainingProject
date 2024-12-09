@@ -15,10 +15,13 @@ body {
 .main {
     width: 350px;
     height: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
     background: #F89CAB;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
+    
 }
 
 #chk {
@@ -102,3 +105,4 @@ button:hover {
 #chk:checked~.signup label {
     transform: scale(.6);
 }
+

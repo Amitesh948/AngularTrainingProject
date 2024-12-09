@@ -7,12 +7,14 @@ import { ClientComponent } from './components/client/client.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
+import { noAuthGuard } from './guards/no-auth.guard';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
       {
-        path: '', component: MainComponent
+        path: '', canActivate:[authGuard] ,component: MainComponent
       },
       {
         path: 'shop', component: ShopComponent
@@ -26,12 +28,15 @@ const routes: Routes = [
       {
         path: 'contact', component: ContactComponent
       },
-      {
-        path: 'login', component: LoginComponent
-      },
-      ]
+      ]      
+  },
+  {
+    path: 'login', canActivate:[noAuthGuard] ,component: LoginComponent
   },
  
+  // {
+  //   path: '**', component: MainComponent
+  // },
 ];
 
 @NgModule({
