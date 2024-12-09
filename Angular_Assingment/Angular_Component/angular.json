@@ -30,9 +30,9 @@
               "src/assets/css/fontawesome-all.min.css"
             ],
             "scripts": [
+              "src/assets/js/jquery.min.js",
               "src/assets/js/jquery.dropotron.min.js",
-              "src/assets/js/breakpoints.min.js",
-              "src/assets/js/jquery.min.js"
+              "src/assets/js/breakpoints.min.js"
             ]
           },
           "configurations": {

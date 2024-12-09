@@ -4,7 +4,8 @@
 <!-- <input type="text" [(ngModel)]="name"> -->
 <!-- <app-directives></app-directives> -->
 <!-- <app-main></app-main> -->
-<div *ngIf="currentview == 'signup'">
+<router-outlet></router-outlet>
+<!-- <div *ngIf="currentview == 'signup'">
        <app-sign-up (viewChanged)="viewHasBeenChanged($event)"></app-sign-up>
 </div>
 <div *ngIf="currentview == 'loginPage'">
@@ -40,6 +41,6 @@
 
 <app-footer [data]="currentPage"></app-footer>
 </div>
-
+ -->
 
 

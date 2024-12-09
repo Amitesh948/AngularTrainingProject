@@ -2571,12 +2571,15 @@ input, select, textarea {
 
 		#nav > ul {
 			margin: 0;
+			color:#fff !important
 		}
+		
 
 			#nav > ul > li {
 				position: relative;
 				display: inline-block;
 				margin-left: 1em;
+				cursor: pointer !important;
 			}
 
 				#nav > ul > li a {
@@ -3357,4 +3360,9 @@ input, select, textarea {
 				text-align: left;
 			}
 
+	}
+
+	#nav > ul > li.text-white.active {
+		background: chocolate;
+		font-weight: 700;
 	}

@@ -25,7 +25,10 @@ export class HeaderComponent {
    // console.log(this.currentPages);
   }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {
+    console.log("header");
+    
+    }
 
   changePage(page: string) {
    // this.currentPages = page;

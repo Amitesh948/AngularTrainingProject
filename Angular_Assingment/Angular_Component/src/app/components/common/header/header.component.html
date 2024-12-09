@@ -1,0 +1,18 @@
+<!-- Logo -->
+<h1><a><em *ngIf="show; then ifBlock else elseBlock">{{subHeader}}</em></a></h1>
+<ng-template #ifBlock>Arcana</ng-template>
+<ng-template #elseBlock>Undefined</ng-template>
+
+<!-- Nav -->
+<nav id="nav">
+    <ul>
+        <!-- Home Link -->
+        <li class="text-white" routerLinkActive=""  [routerLink]="'/'">{{home}}</li>
+        
+        <!-- Sidebar Links -->
+        <li class="text-white" routerLinkActive="active" [routerLink]="'left_sidebar'">{{left_Sidebar}}</li>
+        <li class="text-white" routerLinkActive="active" [routerLink]="'right_sidebar'">{{right_Sidebar}}</li>
+        <li class="text-white" routerLinkActive="active" [routerLink]="'two_sidebar'">{{two_Sidebar}}</li>
+        <li class="text-white" routerLinkActive="active" [routerLink]="'no_sidebar'">{{no_Sidebar}}</li>
+    </ul>
+</nav>
