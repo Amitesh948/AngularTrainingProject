@@ -1,0 +1,30 @@
+.product-container {
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 16px;
+   }
+   
+   
+   .product {
+   width: 100%;
+   }
+   
+   
+   .box {
+   border: 1px solid #ddd;
+   padding: 16px;
+   text-align: center;
+   height: 390px;
+   }
+   
+   
+   .img-box img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   }
+   
+   
+   .detail-box {
+   margin-top: 8px;
+   }
