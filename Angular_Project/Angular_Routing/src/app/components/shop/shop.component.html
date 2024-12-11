@@ -8,8 +8,8 @@
     <div>
       <div class="product-container">
         <div class="product" *ngFor="let item of displayedShop">
-          <div class="box">
-            <a href="">
+          <div class="box" routerLinkActive="active"  [routerLink]="['/product' , item.id]">
+            <a>
               <div class="img-box">
                 <img [src]="item.image" [alt]="item.title" />
               </div>
@@ -20,7 +20,7 @@
                 <h6>
                   Price
                   <span>
-                    {{ item.price }}
+                    {{ item.price | currency}}
                   </span>
                 </h6>
               </div>

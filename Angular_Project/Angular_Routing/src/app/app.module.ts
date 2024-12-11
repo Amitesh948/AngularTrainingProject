@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductInfoComponent } from './components/product-info/product-info.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     ClientComponent,
     LoginComponent,
-    MainComponent
+    MainComponent,
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,

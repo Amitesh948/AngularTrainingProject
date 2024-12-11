@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { noAuthGuard } from './guards/no-auth.guard';
 import { authGuard } from './guards/auth.guard';
+import { ProductInfoComponent } from './components/product-info/product-info.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,9 @@ const routes: Routes = [
   },
   {
     path: 'login', canActivate:[noAuthGuard] ,component: LoginComponent
+  },
+  {
+    path: 'product/:id', component: ProductInfoComponent
   },
  
   // {
