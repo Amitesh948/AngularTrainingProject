@@ -10,6 +10,7 @@ import { MainComponent } from './components/main/main.component';
 import { noAuthGuard } from './guards/no-auth.guard';
 import { authGuard } from './guards/auth.guard';
 import { ProductInfoComponent } from './components/product-info/product-info.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -38,9 +39,9 @@ const routes: Routes = [
     path: 'product/:id', component: ProductInfoComponent
   },
  
-  // {
-  //   path: '**', component: MainComponent
-  // },
+  {
+    path: '**', component: NotFoundComponent
+  },
 ];
 
 @NgModule({

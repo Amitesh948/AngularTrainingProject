@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,20 +7,19 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  name : string = 'Login';
+
+  name: string = 'Login';
   username: any;
 
-  constructor(private route:ActivatedRoute) {}
+  constructor(private route: ActivatedRoute , private router : Router) { }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(params => {
-      this.username = params['username'] || null; 
-      console.log('Username:', this.username); 
-    });
-
     const userData = JSON.parse(localStorage.getItem("userdata") || "");
-    console.log(userData);
-    
-    this.username = userData.username
+    this.username = userData.username;
+  }
+
+  sendToLogin() {
+    localStorage.clear();
+    this.router.navigate(['/login']);
   }
 }

@@ -8,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-info.component.css']
 })
 export class ProductInfoComponent implements OnInit{
-  productDetails: any | null = null;
+  productDetails: any ;
   productId: string | null = null;
 
   constructor(private apiCallingService: ApiCallingService, private route: ActivatedRoute) {

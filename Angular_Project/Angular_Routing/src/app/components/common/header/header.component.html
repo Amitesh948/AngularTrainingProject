@@ -26,11 +26,14 @@
               </li>
           </ul>
           <div class="user_option">
-              <a href="" routerLinkActive="active" [routerLink]="['/login']" *ngIf="!username">
+              <a routerLinkActive="active" [routerLink]="['/login']" *ngIf="!username">
                   <i class="fa fa-user" aria-hidden="true"></i>
                   <span>{{name}}</span>
               </a>
               <a>{{username}}</a>
+          </div>
+          <div class="btn-box">
+            <a (click)="sendToLogin()">Log Out</a>
           </div>
       </div>
   </nav>
